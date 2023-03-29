@@ -1,0 +1,28 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% block title %}
+    <title>parent1</title>
+    {% endblock %}
+    <link rel="stylesheet" href="{% static 'css/bootstap.css' %}">
+    <link rel="stylesheet" href="{% static 'css/mdb.css' %}">
+</head>
+<body>
+    <center>
+        {% block body_block %}
+         <h1 class="btn btn-success">parent html page</h1>
+         {% endblock %}
+    </center>
+
+
+
+    <script src="{% static 'js/bootstap.css' %}"></script>
+    <script src="{% static 'js/mdb.css' %}"></script>
+    <script src="{% static 'js/jquery.css' %}"></script>
+    <script src="{% static 'js/popper.css' %}"></script>
+</body>
+</html>
